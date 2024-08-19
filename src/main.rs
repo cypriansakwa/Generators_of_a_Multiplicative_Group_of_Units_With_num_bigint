@@ -55,7 +55,7 @@ fn prime_factors(n: &BigUint) -> HashSet<BigUint> {
 }
 
 fn main() {
-    let n = BigUint::parse_bytes(b"22", 10).unwrap();  // Change this value to test with different n
+    let n = BigUint::parse_bytes(b"9", 10).unwrap();  // Change this value to test with different n
     let phi_n = euler_totient(&n);
     let factors = prime_factors(&phi_n);
 
